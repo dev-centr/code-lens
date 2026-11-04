@@ -5,6 +5,7 @@
 ### Changed
 
 - Repository transferred from `AMDphreak/code-lens` to [`dev-centr/code-lens`](https://github.com/dev-centr/code-lens). Live demo: [dev-centr.github.io/code-lens](https://dev-centr.github.io/code-lens/).
+- **Demo (`@code-lens/demo`)** — Vite dev dependency raised to `^6.4.5` (from `^6.0.0` / lockfile 6.4.2). Includes the [6.4.5 security fix](https://github.com/vitejs/vite/security/advisories/GHSA-8g5g-mxqh-grgj) for `server.fs.deny` bypass via `?raw` / `?import` query strings when the dev server is exposed to the network (`--host` / `server.host`). Default `pnpm dev` binds to localhost only; production GitHub Pages output is unaffected.
 
 ## [0.3.13] - 2026-05-29
 
